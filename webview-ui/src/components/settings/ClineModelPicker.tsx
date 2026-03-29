@@ -137,7 +137,7 @@ const ClineModelPicker: React.FC<ClineModelPickerProps> = ({ isPopup, currentMod
 			setClineFreeModels(free)
 			return true
 		} catch (error) {
-			console.error("Failed to refresh Cline recommended models:", error)
+			console.error("Failed to refresh ClineZ recommended models:", error)
 			return false
 		}
 	}, [])
@@ -559,7 +559,7 @@ const ClineModelPicker: React.FC<ClineModelPickerProps> = ({ isPopup, currentMod
 						marginTop: 0,
 						color: "var(--vscode-descriptionForeground)",
 					}}>
-					The extension automatically fetches the latest Cline model list. If you're unsure which model to choose, Cline
+					The extension automatically fetches the latest Cline model list. If you're unsure which model to choose, ClineZ
 					works best with <strong>anthropic/claude-sonnet-4.5</strong>.
 				</p>
 			)}

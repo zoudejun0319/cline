@@ -68,7 +68,7 @@ export const ClineKanbanLaunchModal: React.FC<ClineKanbanLaunchModalProps> = ({ 
 							className="m-0 text-lg font-semibold"
 							id="cline-kanban-title"
 							style={{ color: "var(--vscode-editor-foreground)" }}>
-							Introducing Cline Kanban
+							Introducing ClineZ Kanban
 						</h2>
 					</div>
 

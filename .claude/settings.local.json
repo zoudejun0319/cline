@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npm rebuild:*)",
+      "Bash(node esbuild.mjs --production)",
+      "Bash(npx vsce:*)",
+      "Bash(cd:*)",
+      "Bash(python3:*)",
+      "Bash(node -e \":*)",
+      "Bash(node:*)",
+      "Bash(grep -rn \"class ClineEndpoint\\\\|class ClineEndpoint\" src/ --include=*.ts)",
+      "Bash(grep -v \"test\\\\|spec\\\\|stub\\\\|should\\\\|log\\\\|comment\\\\|//.*isSelfHosted\")",
+      "Bash(grep -v \"^\\\\s*\\\\*\\\\|^\\\\s*//\")",
+      "Bash(xxd src/config.ts)"
+    ]
+  }
+}
