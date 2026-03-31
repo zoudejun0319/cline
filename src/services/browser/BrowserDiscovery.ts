@@ -56,17 +56,7 @@ export async function tryConnect(ipAddress: string): Promise<{ endpoint: string;
  * Discover Chrome instances (localhost only)
  */
 export async function discoverChromeInstances(): Promise<string | null> {
-	// Only try localhost
-	const ipAddresses = ["localhost", "127.0.0.1"]
-
-	// Try connecting to each IP address
-	for (const ip of ipAddresses) {
-		const connection = await tryConnect(ip)
-		if (connection) {
-			return `http://${connection.ip}:9222`
-		}
-	}
-
+	// HARD DISABLE: 不扫描 Chrome 实例（避免端口扫描行为）
 	return null
 }
 

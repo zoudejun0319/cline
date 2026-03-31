@@ -265,10 +265,7 @@ async function ensureUserInOrgWithRemoteConfig(controller: Controller): Promise<
  *
  * @param controller The controller instance
  */
-export async function fetchRemoteConfig(controller: Controller) {
-	try {
-		await ensureUserInOrgWithRemoteConfig(controller)
-	} catch (error) {
-		Logger.error("Failed to fetch remote config", error)
-	}
+export async function fetchRemoteConfig(_controller: Controller) {
+	// HARD DISABLE: 不拉取远程配置
+	return
 }

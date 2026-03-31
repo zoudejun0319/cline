@@ -13,7 +13,12 @@
       "Bash(grep -rn \"class ClineEndpoint\\\\|class ClineEndpoint\" src/ --include=*.ts)",
       "Bash(grep -v \"test\\\\|spec\\\\|stub\\\\|should\\\\|log\\\\|comment\\\\|//.*isSelfHosted\")",
       "Bash(grep -v \"^\\\\s*\\\\*\\\\|^\\\\s*//\")",
-      "Bash(xxd src/config.ts)"
+      "Bash(xxd src/config.ts)",
+      "Bash(where buf:*)",
+      "Bash(npx buf:*)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(ls:*)",
+      "Bash(npm ls:*)"
     ]
   }
 }
